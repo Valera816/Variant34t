@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title> Снаряжение рядом · V34</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="catalog1.js" defer></script>
+
+</head>
+<body>
+<form class="request-form" method="get">
+<main class="page">
+<h1 class = "title">Снаряжение рядом V34 <h1>
+ 
+<h2>Подготовьтесь к прогулке</h2>
+<nav>
+  <a href="index.html">Главная</a>
+  <a href="catalog.html">Назад</a>
+</nav>
+<h2 id="catalog">Каталог снаряжения</h2>
+
+
+ <p>
+  <label for="item">Товар</label>
+  <select id="item" name="item" required>
+    <option value="">Выберите из списка</option>
+    <option value="fridge">Рюкзак</option>
+    <option value="washer">Коврик</option>
+    <option value="kettle">Фонарь</option>
+  </select>
+</p>
+<p>
+  <label for="quantity">Количество единиц</label>
+</p>
+  <input id="quantity" name="quantity" type="number"
+         min="1" step="1" value="1" required>
+</p>
+<p>
+  <label for="notes">Комментарий к заказу</label>
+</p>
+  <textarea id="notes" name="notes" rows="4"
+            placeholder="Например, удобный день доставки"></textarea>
+</p>
+<p>
+  <input id="extra1" name="extra1" type="checkbox" value="yes" checked>
+  <label for="extra1">Нужна доставка</label>
+</p>
+<p>
+  <input id="extra1" name="extra1" type="checkbox" value="yes" checked>
+  <label for="extra1">Нужна установка</label>
+</p>
+<label for="quantity">срок проката 1-5 </label>
+</p>
+<input id="level" name="level" type="range"
+       min="1" max="5" step="1" value="3">
+</p>
+<label for="quantity">1 день - 5 дней </label>
+
+</p>
+
+<button type="submit">Проверить заказ</button>
+
+<p id="result" role="status" aria-live="polite"></p>
+</form>
+<footer>
+  <p> Вариант 34 </p>
+</footer>
+</main>
+</body>
+</html>
