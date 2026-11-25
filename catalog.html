@@ -32,6 +32,13 @@
 <p id="status" role="status"></p>
 
 </body>
+<script>
+  if ("serviceWorker" in navigator) {
+    navigator.serviceWorker.register("./sw.js").catch((error) => {
+      console.error("Не удалось зарегистрировать service worker:", error);
+    });
+  }
+</script>
 <footer>
   <p> Вариант 34 </p>
 </main>
