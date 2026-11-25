@@ -14,6 +14,7 @@
 <main class="page">
 <header>
 <h1 class = "title">Снаряжение рядом V34 · </h1>
+<p>Учебная версия 1</p>
 <p id="status" role="status"></p>
 <button id="show-names" type="button">Показать названия</button>
 <ul id="names"></ul>
@@ -39,5 +40,12 @@
   <p> Вариант 34 </p>
 </footer>
 </main>
+<script>
+  if ("serviceWorker" in navigator) {
+    navigator.serviceWorker.register("./sw.js").catch((error) => {
+      console.error("Не удалось зарегистрировать service worker:", error);
+    });
+  }
+</script>
 </body>
 </html>
