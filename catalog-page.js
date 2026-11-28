@@ -3,22 +3,24 @@ const catalog = [
 position: 1,
 name: "Рюкзак",
 specs: "30 литров 1 комплект",
-description: "Для вещей и короткого маршрута"
+description: "Для вещей и короткого маршрута",
+image: "images/item1.png"
     },
     {
 
 position: 2,
 name: "Коврик", 
 specs: "180 см 1 комплект",
-description: "Для остановки и отдыха на природе"
-
+description: "Для остановки и отдыха на природе",
+image: "images/item2.png"
     },
     {
 
 position: 3,
 name: "Фонарь",
 specs: "Три режима 1 комплект",
-    description: "Свет для вечерней прогулки"
+    description: "Свет для вечерней прогулки",
+image: "images/item3.png"
     }
 ];
 function filterByText(items, query) {
